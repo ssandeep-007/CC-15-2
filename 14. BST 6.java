@@ -29,7 +29,7 @@ class BST {
                 insertRecursion(node.left, data);
             }
         } 
-        else 
+        else if (data.compareTo(node.data) > 0)
         {
             if (node.right == null) {
                 node.right = new Node(data);
